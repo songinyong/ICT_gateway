@@ -17,6 +17,10 @@ spring:
             predicates:
               - Path=/user/**    
           
+          - id: BLOCKCHAIN-CLIENT
+            uri: lb://BLOCKCHAIN-CLIENT
+            predicates:
+             - path=/chain/**
          
 server: 
     port: 5555
