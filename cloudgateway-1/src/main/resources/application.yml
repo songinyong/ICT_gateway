@@ -20,7 +20,7 @@ spring:
           - id: BLOCKCHAIN-CLIENT
             uri: lb://BLOCKCHAIN-CLIENT
             predicates:
-             - path=/chain/**
+             - Path=/chain/**
          
 server: 
     port: 5555
@@ -34,7 +34,7 @@ eureka:
           fetchRegistry: true
           preferIpAddress: true
           registerWithEureka: true
-          defaultZone: http://13.125.152.144:8761/eureka/
+          defaultZone: http://54.180.114.232:8761/eureka/
                
 jwt:
   secret: ENC(nugQJ8BkKGjd6l6OruPwT7cpYiaQgfYzhYBaMPXPihg=)
