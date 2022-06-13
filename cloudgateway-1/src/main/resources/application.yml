@@ -9,8 +9,8 @@ spring:
             uri: lb://POST-CLIENT
             predicates:
              - Path=/posts/**
-            filters:
-             - name: JwtAuthenticationFilter2
+           # filters:
+           #  - name: JwtAuthenticationFilter2
         
           - id: LOGIN-CLIENT
             uri: lb://LOGIN-CLIENT
